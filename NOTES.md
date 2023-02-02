@@ -26,3 +26,9 @@ Customers are responsible for security in the cloud.
 
 
 ## Protect the AWS Root User
+
+
+## AWS Identity and Access Management
+### IAM
+AWS Identity and Access Management (IAM) is an AWS service that helps you manage access to your AWS account and resources. It also provides a centralized view of who and what are allowed inside your AWS account (authentication), and who and what have permissions to use and work with your AWS resources (authorization).
+
