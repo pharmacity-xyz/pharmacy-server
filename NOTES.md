@@ -270,3 +270,14 @@ The next component that EC2 Auto Scaling needs is an EC2 Auto Scaling Group. An 
 Different numbers for minimum, maximum, and desired capacity are used for dynamically adjusting the capacity.
 
 ### Automation with scaling policies
+
+# Employee Directory Application Redesign
+*Static*
+S3 supports static website hosting
+
+*Dynamic*
+pulling data from a DB. S3 wouldn't work for this use case. This is where JavaScript comes in. JS files and scripts have ability to make HTTP requests and load dynamic content, modifying the static page to display results that come back from the requests. 
+
+
+# References
+- [AWS]()
