@@ -279,5 +279,7 @@ S3 supports static website hosting
 pulling data from a DB. S3 wouldn't work for this use case. This is where JavaScript comes in. JS files and scripts have ability to make HTTP requests and load dynamic content, modifying the static page to display results that come back from the requests. 
 
 
+![Screenshot from 2023-02-06 15-17-19](https://user-images.githubusercontent.com/62386689/216920108-f8f4cfbf-77c5-4895-a4dd-91144090153a.png)
+
 # References
 - [AWS]()
