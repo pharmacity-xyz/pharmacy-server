@@ -160,3 +160,4 @@ In DynamoDB, tables, items, and attributes are the core components that you work
 
 ## Choose the Right Database Service
 
+![Screenshot from 2023-02-06 11-20-56](https://user-images.githubusercontent.com/62386689/216883055-4b601463-c56b-4587-8111-0e1f278c00b3.png)
