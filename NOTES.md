@@ -1,4 +1,4 @@
-# NOTES
+# AWS Technical Essentials
 
 # MODULE 1: Introduction to amazon web services
 
@@ -272,14 +272,17 @@ Different numbers for minimum, maximum, and desired capacity are used for dynami
 ### Automation with scaling policies
 
 # Employee Directory Application Redesign
-*Static*
+
+_Static_
 S3 supports static website hosting
 
-*Dynamic*
-pulling data from a DB. S3 wouldn't work for this use case. This is where JavaScript comes in. JS files and scripts have ability to make HTTP requests and load dynamic content, modifying the static page to display results that come back from the requests. 
-
+_Dynamic_
+pulling data from a DB. S3 wouldn't work for this use case. This is where JavaScript comes in. JS files and scripts have ability to make HTTP requests and load dynamic content, modifying the static page to display results that come back from the requests.
 
 ![Screenshot from 2023-02-06 15-17-19](https://user-images.githubusercontent.com/62386689/216920108-f8f4cfbf-77c5-4895-a4dd-91144090153a.png)
 
 # References
-- [AWS]()
+- [AWS Certified Developer - Associate](https://aws.amazon.com/certification/certified-developer-associate/?ch=sec&sec=rmg&d=1)
+- [AWS](https://explore.skillbuilder.aws/learn/course/external/view/elearning/1851/aws-technical-essentials?da=sec&sec=prep)
+- [containerized-applications-on-aws](https://www.coursera.org/learn/containerized-applications-on-aws)
+- [Building Modern Python Applications on AWS](https://www.coursera.org/learn/building-modern-python-applications-on-aws#instructors)
