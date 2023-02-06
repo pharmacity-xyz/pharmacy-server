@@ -124,3 +124,39 @@ Amazon S3 is an object storage service. Object storage stores data in a flat str
 - static content
 
 # Module 5: Databases
+
+## Databases on AWS
+
+### Relational databases
+
+A table stores data in rows and columns. A row, often called a record, contains all information about a specific entry. Columns describe attributes of an entry.
+
+## Amazon Relational Database Service
+
+### Amazon RDS
+
+Amazon Relational Database Service (Amazon RDS) lets customers create and manage relational databases in the cloud without the operational burden of traditional database management.
+
+## Purpose-Built Databases
+
+1. Amazon Relational Databases(RDS) - Default
+2. Amazon Dynamo DB(DynamoDB) - Non-relational DB (key - value store)
+3. Amazon Document DB(Amazon DocumentDB) - MongoDB compatibility
+4. Amazon Neptune graph database(Neptune) - fraud detection
+5. Amazon QLDB ledger database(Amazon QLDB) - immutability
+
+## Amazon DynamoDB
+
+### Amazon DynamoDB introduction
+
+Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. 
+
+### Amazon DynamoDB core components
+In DynamoDB, tables, items, and attributes are the core components that you work with. A table is a collection of items, and each item is a collection of attributes. 
+
+- **Tables**: Similar to other database systems, DynamoDB stores data in tables. A table is a collection of data. 
+- **Items**: Each table contains zero or more items. An item is a group of attributes that is uniquely identifiable among all the other items. 
+- **Attributes**: Each item is composed of one or more attributes. An attribute is a fundamental data element, something that does not need to be broken down any further. 
+
+## Choose the Right Database Service
+
