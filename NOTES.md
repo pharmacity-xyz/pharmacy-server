@@ -1,4 +1,6 @@
 # NOTES
+
+# MODULE 1: Introduction to amazon web services
 ## What is AWS?
 With cloud computing, companies do not have to manage and maintain their own hardware and data centers. Instead, companies like AWS own and maintain data centers and provide virtual data center technologies and services to companies and users over the internet. 
 
@@ -31,4 +33,72 @@ Customers are responsible for security in the cloud.
 ## AWS Identity and Access Management
 ### IAM
 AWS Identity and Access Management (IAM) is an AWS service that helps you manage access to your AWS account and resources. It also provides a centralized view of who and what are allowed inside your AWS account (authentication), and who and what have permissions to use and work with your AWS resources (authorization).
+
+## Role-Based Access in AWS
+
+# MODULE 2: AWS Compute
+## Compute as a Service
+The first building block you need to host an application is a server. Servers usually can handle Hypertext Transfer Protocol (HTTP) requests and send responses to clients following the clinet-server model, although any API-based communication also falls under this model. 
+
+## Amazon Elastic Compute Cloud
+### Amazon EC2
+Amazon EC2 is a web service that provides secure, resizable compute capacity in the cloud. 
+
+You can create and manage EC2 instances through the AWS Management Console, the AWS Command Line Interface (CLI), AWS software development kits (SDKs), automation tools, and infrastructure orchestration services. 
+
+### Amazon Machine Image
+In the AWS Cloud, the OS installation is not your responsibility. Instead, it's built into the AMI that you choose. 
+
+### Relationship between AMIs and EC2 instances
+EC2 instances are live instantiations of what is defined in an AMI, much like a cake is a live instantiation of a cake recipe. you can also see this kind of relationship between a class and an object
+
+
+## Amazon EC2 Instance Lifecycle
+
+
+## Container Services
+### Containers
+Docker - is a pupular container runtime that simplifies the management of the entire operating system stack needed for container isolation, including networking and storage. 
+
+### Difference between containers and virtual machines (VMs)
+Containers share the same operating system and kernel as the host they exist on, whereas virtual machines contain their own operating system. 
+
+### Orchestrate containers
+In AWS, containers run on EC2 instances. 
+
+### Use Kubernetes with Amazon Elastic Kubernetes Service (Amazon EKS)
+Kubernetes is a portable, extensible, open source platform for managing containerized workloads and services. 
+
+## Serverless
+
+## AWS Lambda
+
+# Module 3: AWS NETWORKING
+## Networking
+
+## Amazon Virtual Private Cloud
+A virtual private cloud (VPC) is an isolated network that you create in the AWS Cloud, similar to a traditional network in a data center. 
+
+
+# Module 4: AWS Storage
+## Amazon EC2 instance Storage and Amazon Elastic Block Store
+### Amazon EC2 instance store
+Amazon EC2 instance store provides temporary block-level storage for an instance. This storage is located on disks that are physically attached to the host computer. 
+
+### Amazon Elastic Block Storage (Amazon EBS)
+As the name implies, Amazon EBS is a block-level storage devide that you can attach to an Amazon EC2 instance. 
+
+## Object Storage with Amazon Simple Storage Service
+Amazon S3 is an object storage service. Object storage stores data in a flat structure, using unique identifiers to look up objects when requested. 
+
+### Amazon S3 use cases
+- backup and storage
+- media hosting
+- software delivery
+- data lakes
+- static websites
+- static content
+
+
+# Module 5: Databases
 
