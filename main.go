@@ -1,11 +1,11 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
 	"html"
 	"log"
 	"net/http"
+	"os"
 )
 
 type Avenger struct {
@@ -20,35 +20,6 @@ func (a *Avenger) isAlive() {
 }
 
 func main() {
-	avengers := []Avenger{
-		{
-			RealName: "Dr. Bruce Banner",
-			HeroName: "Hulk",
-			Planet:   "Midgard",
-		},
-		{
-			RealName: "Tony Stark",
-			HeroName: "Iron Man",
-			Planet:   "Midgard",
-		},
-		{
-			RealName: "Thor Odinson",
-			HeroName: "Thor",
-			Planet:   "Midgard",
-		},
-	}
-
-	avengers[1].isAlive()
-
-	jsonBytes, err := json.Marshal(avengers)
-	if err != nil {
-		log.Fatalln(err)
-	}
-
-	fmt.Println(string(jsonBytes))
-}
-
-func server() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
 	})
@@ -57,5 +28,13 @@ func server() {
 		fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
 	})
 
-	log.Fatal(http.ListenAndServe(":8081", nil))
+	port := os.Getenv("PORT")
+
+	if port == "" {
+		port = "8081"
+	}
+
+	fmt.Printf("Starting the server on :%s... \n", port)
+
+	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%s", port), nil))
 }
