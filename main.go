@@ -3,7 +3,9 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"html"
 	"log"
+	"net/http"
 )
 
 type Avenger struct {
@@ -44,4 +46,16 @@ func main() {
 	}
 
 	fmt.Println(string(jsonBytes))
+}
+
+func server() {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
+	})
+
+	http.HandleFunc("/hi", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
+	})
+
+	log.Fatal(http.ListenAndServe(":8081", nil))
 }
