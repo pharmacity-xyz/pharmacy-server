@@ -8,17 +8,6 @@ import (
 	"os"
 )
 
-type Avenger struct {
-	RealName string `json:"real_name"`
-	HeroName string `json:"hero_name"`
-	Planet   string `json:"planet"`
-	Alive    bool   `json:"alive"`
-}
-
-func (a *Avenger) isAlive() {
-	a.Alive = true
-}
-
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
